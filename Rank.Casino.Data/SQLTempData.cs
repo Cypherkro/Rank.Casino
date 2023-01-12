@@ -18,9 +18,15 @@ namespace Rank.Casino.Data
 
             var playersRow = _players.Rows.Add("");
             playersRow[Constants.ColumnPlayerId] = "1";
-            playersRow[Constants.ColumnUsername] = "JD";
+            playersRow[Constants.ColumnUsername] = "JohnD";
             playersRow[Constants.ColumnName] = "John Doe";
             playersRow[Constants.ColumnBalance] = "100";
+
+            var playersRowJane = _players.Rows.Add("");
+            playersRowJane[Constants.ColumnPlayerId] = "2";
+            playersRowJane[Constants.ColumnUsername] = "JaneD";
+            playersRowJane[Constants.ColumnName] = "Jane Doe";
+            playersRowJane[Constants.ColumnBalance] = "120";
 
 
             _transactions.Columns.Add(Constants.ColumnId);
